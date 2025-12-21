@@ -1,0 +1,8 @@
+{
+  "name": "DevFolio",
+  "description": "A next-generation personal portfolio website featuring a responsive design and interactive data visualization to showcase the developer's experience.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}

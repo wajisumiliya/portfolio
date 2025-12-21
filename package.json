@@ -1,0 +1,18 @@
+{
+  "name": "mohamed-wajeethu-ali-portfolio",
+  "version": "1.0.0",
+  "description": "High-performance personal portfolio for Mohamed Wajeethu Ali, built with React, Tailwind, and Gemini AI.",
+  "main": "index.tsx",
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "@google/genai": "^1.33.0",
+    "lucide-react": "^0.561.0",
+    "recharts": "^3.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}
