@@ -86,7 +86,7 @@ const Contact: React.FC<ContactProps> = ({ isOpen, onClose }) => {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-white font-semibold text-sm">WhatsApp</h4>
-                      <p className="text-slate-400 mt-0.5 text-xs">+91 9486033167</p>
+                      <p className="text-slate-400 mt-0.5 text-xs">+91-9486033167</p>
                     </div>
                   </div>
                   
@@ -96,7 +96,7 @@ const Contact: React.FC<ContactProps> = ({ isOpen, onClose }) => {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-white font-semibold text-sm">Location</h4>
-                      <p className="text-slate-400 mt-0.5 text-xs">Chennai, Tamil Nadu, India</p>
+                      <p className="text-slate-400 mt-0.5 text-xs">Ramanathapuram, Tamilnadu, India</p>
                     </div>
                   </div>
                 </div>
