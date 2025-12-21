@@ -6,25 +6,25 @@ const CoreCompetencies: React.FC = () => {
     {
       category: "Front-End",
       icon: <Layout size={16} />,
-      skills: ["React", "TypeScript", "Tailwind", "Next.js"],
+      skills: ["React", "TypeScript", "Tailwind", "HTML5", "CSS3", "JavaScript"],
       color: "from-sky-500/10"
     },
     {
       category: "Back-End",
       icon: <Server size={16} />,
-      skills: ["Node.js", "Python", "ASP.Net", "REST"],
+      skills: ["Node.js", "ASP.Net", "REST"],
       color: "from-blue-500/10"
     },
     {
-      category: "Infrastructure",
+      category: "Frame Work/Infrastructure",
       icon: <Globe size={16} />,
-      skills: ["Docker", "AWS", "Vercel", "CI/CD"],
+      skills: ["Angular","Vercel", "CI/CD"],
       color: "from-indigo-500/10"
     },
     {
-      category: "Security & DB",
+      category: "DataBase",
       icon: <ShieldCheck size={16} />,
-      skills: ["MySQL", "MongoDB", "Auth0", "JWT"],
+      skills: ["MySQL", "MongoDB"],
       color: "from-cyan-500/10"
     }
   ];
