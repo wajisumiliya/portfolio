@@ -1,7 +1,7 @@
 import { PortfolioData, BlogPost } from './types';
 
 export const PORTFOLIO_DATA: PortfolioData = {
-  name: "",
+  name: "Mohamed Wajeethu Ali",
   title: "",
   about: "FullStack Developer with 2+ years of experience in building scalable and efficient web applications using a range of technologies. Proficient in HTML, CSS, JavaScript, and C#. Strong understanding of database design, development, and deployment.",
   skills: [
