@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 <Phone size={14} className="print:text-black" /> +91-9486033167
               </div>
               <div className="flex items-center gap-2 hover:text-sky-400 transition-colors cursor-default">
-                <MapPin size={14} className="print:text-black" /> Ramanathapuram,Tamilnadu,India
+                <MapPin size={14} className="print:text-black" /> Ramanathapuram,Tamilnadu,India.
               </div>
             </div>
             
