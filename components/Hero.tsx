@@ -58,10 +58,10 @@ const Hero: React.FC = () => {
                 <Mail size={14} className="print:text-black" /> mohamedwajeethuali@gmail.com
               </div>
               <div className="flex items-center gap-2 hover:text-sky-400 transition-colors cursor-default">
-                <Phone size={14} className="print:text-black" /> +91 9486033167
+                <Phone size={14} className="print:text-black" /> +91-9486033167
               </div>
               <div className="flex items-center gap-2 hover:text-sky-400 transition-colors cursor-default">
-                <MapPin size={14} className="print:text-black" /> Chennai, India
+                <MapPin size={14} className="print:text-black" /> Ramanathapuram,Tamilnadu,India
               </div>
             </div>
             
