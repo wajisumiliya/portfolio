@@ -2,7 +2,15 @@ import { GoogleGenAI, Chat } from "@google/genai";
 import { PORTFOLIO_DATA } from "../constants";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY || '';
+let ai: GoogleGenAI | null = null;
+try {
+  if (apiKey) {
+    ai = new GoogleGenAI({ apiKey });
+  }
+} catch (e) {
+  console.warn("Gemini API not initialized:", e);
+}
 
 // Construct the system instruction with the portfolio context
 const SYSTEM_INSTRUCTION = `
@@ -31,7 +39,10 @@ GUIDELINES:
 
 let chatSession: Chat | null = null;
 
-export const getChatSession = (): Chat => {
+export const getChatSession = (): Chat | null => {
+  if (!ai) {
+    return null;
+  }
   if (!chatSession) {
     chatSession = ai.chats.create({
       model: 'gemini-3-flash-preview',
@@ -46,6 +57,9 @@ export const getChatSession = (): Chat => {
 export const sendMessageToAssistant = async (message: string): Promise<string> => {
   try {
     const chat = getChatSession();
+if (!chat) {
+      return "AI assistant is not configured. Please set up a GEMINI_API_KEY to enable this feature.";
+    }
     const result = await chat.sendMessage({ message });
     return result.text || "I'm having trouble thinking right now. Please try again.";
   } catch (error) {
@@ -53,3 +67,5 @@ export const sendMessageToAssistant = async (message: string): Promise<string> =
     return "Sorry, I encountered an error while processing your request.";
   }
 };
+
+export const isAiConfigured = (): boolean => ai !== null
