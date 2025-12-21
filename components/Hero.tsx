@@ -111,9 +111,7 @@ const Hero: React.FC = () => {
                   className="rounded-[24px] w-full aspect-[1/1.1] object-cover grayscale-[0.2]"
                 />
                 
-                <div className="absolute top-8 right-8 p-3 bg-slate-950/90 backdrop-blur-xl border border-slate-700 rounded-xl shadow-2xl">
-                   <div className="text-sky-400 font-black text-lg leading-none">99.9%</div>
-                   <div className="text-slate-500 text-[8px] uppercase font-black tracking-widest mt-1">Uptime</div>
+                
                 </div>
               </div>
             </div>
